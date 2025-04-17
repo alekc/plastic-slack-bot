@@ -229,11 +229,6 @@ app.get('/health', (req, res) => {
     res.status(200).send('OK');
 });
 
-// Add new healthz endpoint
-app.get('/healthz', (req, res) => {
-    res.status(200).send('OK');
-});
-
 // Start the server
 app.listen(PORT, () => {
     logger.info(`Server is listening on port ${PORT}`);

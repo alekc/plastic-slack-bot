@@ -56,7 +56,6 @@ POST /notify
 
 ```
 GET /health
-GET /healthz
 ```
 
 ## Request Format
