@@ -2,5 +2,14 @@
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": [
     "github>alekc/renovate-config:build-automerge"
+  ],
+  "packageRules": [
+    {
+      "description": "Small bot, risk accepted: npm minors merge once the image builds.",
+      "matchUpdateTypes": [
+        "minor"
+      ],
+      "automerge": true
+    }
   ]
 }
